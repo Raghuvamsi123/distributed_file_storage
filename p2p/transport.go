@@ -10,4 +10,5 @@ type Peer interface {
 // Can be of the form tcp/udp/ websockets.
 
 type Transport interface {
+	ListenAndAccept() error
 }
